@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "generatedAt": "2025-05-03T09:13:22.433Z",
+    "tasksAnalyzed": 10,
+    "thresholdScore": 5,
+    "projectName": "Your Project Name",
+    "usedResearch": false
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 1,
+      "taskTitle": "데이터베이스 스키마 설계 및 구축",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the PostgreSQL database schema design and implementation task into subtasks covering: 1) Initial connection setup with the provided credentials, 2) Users table creation with proper constraints, 3) Admins table creation with role management, 4) Index optimization and constraint implementation",
+      "reasoning": "This task involves database design and implementation which is moderately complex. It requires specific table creation with defined fields, connection setup with provided credentials, and implementation of indexes and constraints. The scope is well-defined with two main tables."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "FastAPI 프로젝트 세팅",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the FastAPI project setup into subtasks covering: 1) Project directory structure creation, 2) Python virtual environment setup and package installation, 3) Database connection configuration, 4) CORS middleware implementation, 5) Basic configuration files and environment variables setup",
+      "reasoning": "Setting up a FastAPI project involves multiple components including directory structure, dependencies, middleware configuration, and database connections. The complexity comes from ensuring all components are properly integrated and configured for the application's needs."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "사용자 인증 API 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the user authentication API implementation into subtasks covering: 1) Pydantic model creation for request/response validation, 2) Password hashing implementation with passlib, 3) JWT token generation and validation, 4) User registration endpoint implementation, 5) User login endpoint implementation, 6) Error handling and status code implementation",
+      "reasoning": "User authentication is complex as it involves security considerations, multiple endpoints, token management, password hashing, and proper error handling. The implementation requires careful attention to security details and proper validation."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "관리자 인증 API 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the admin authentication API implementation into subtasks covering: 1) Admin login endpoint creation, 2) Role-based access control implementation, 3) JWT claims for admin-specific roles, 4) Admin route protection middleware, 5) Authentication flow separation between regular users and admins",
+      "reasoning": "Admin authentication builds upon user authentication but adds complexity with role-based access control and separate authentication flows. It requires careful implementation of middleware for route protection and proper JWT claims management."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "React 프론트엔드 프로젝트 세팅",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the React frontend project setup into subtasks covering: 1) Project initialization with Create React App or Vite, 2) Tailwind CSS and ShadCN UI integration, 3) Project folder structure organization, 4) React Router setup and basic routing, 5) API service layer implementation for backend communication",
+      "reasoning": "Setting up a React project with specific UI libraries and structure requires multiple configuration steps. The complexity comes from integrating Tailwind CSS and ShadCN UI, setting up proper folder structure, and creating the foundation for routing and API communication."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "사용자 회원가입 및 로그인 UI 구현",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the user registration and login UI implementation into subtasks covering: 1) Registration form component creation with all required fields, 2) Login form component creation, 3) Form validation implementation with React Hook Form or Formik, 4) Responsive design implementation with Tailwind CSS, 5) Loading and error state UI components",
+      "reasoning": "Creating registration and login UIs involves form design, validation, responsive styling, and state management. The complexity comes from implementing proper validation, creating reusable components, and handling different UI states."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "관리자 로그인 UI 및 대시보드 레이아웃",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the admin login UI and dashboard layout implementation into subtasks covering: 1) Admin login page creation, 2) Dashboard layout with sidebar navigation, 3) Header component implementation, 4) Content area layout, 5) Responsive design for dashboard components and protected route implementation",
+      "reasoning": "This task involves creating both a login interface and a complex dashboard layout with multiple components. The dashboard requires sidebar navigation, header, and content areas, all with responsive design considerations and protected routing."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "사용자 인증 프론트-백엔드 연동",
+      "complexityScore": 8,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Divide the user authentication frontend-backend integration into subtasks covering: 1) API service functions for registration and login, 2) JWT token storage implementation, 3) Authentication context creation with React Context API, 4) Protected route implementation for authenticated users, 5) Loading state handling during API calls, 6) Authentication error message handling",
+      "reasoning": "Integrating frontend with backend authentication is complex as it involves API calls, token management, context creation for global state, and protected routing. Error handling and loading states add additional complexity to ensure a smooth user experience."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "관리자 인증 프론트-백엔드 연동 및 대시보드 기능",
+      "complexityScore": 8,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the admin authentication integration and dashboard functionality into subtasks covering: 1) Admin login API service implementation, 2) Admin authentication context creation, 3) Admin-specific protected routes, 4) Basic dashboard functionality including user statistics, 5) Admin-specific navigation and layout implementation, 6) Session management functionality",
+      "reasoning": "This task combines authentication integration with dashboard functionality implementation. It requires admin-specific authentication context, protected routes, and dashboard features like user statistics. The combination of these elements makes it a complex task."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "API 문서화 및 최종 테스트",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the API documentation and final testing task into subtasks covering: 1) Swagger UI setup in FastAPI, 2) Detailed documentation for all endpoints with examples, 3) Comprehensive error handling implementation, 4) End-to-end testing of complete user flows, 5) Responsive testing across different devices and API performance optimization",
+      "reasoning": "Documentation and testing involve multiple aspects including Swagger setup, detailed endpoint documentation, comprehensive testing across different devices, and performance optimization. The breadth of testing required and the need for thorough documentation make this a moderately complex task."
+    }
+  ]
+}
