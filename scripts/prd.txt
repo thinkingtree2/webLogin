@@ -35,7 +35,7 @@
 # Technical Architecture
 ## 시스템 구성
 - Frontend: React, Tailwind CSS, ShadCN UI, JavaScript/TypeScript
-- Backend: FastAPI (Python), RESTful API, Swagger, venv
+- Backend: FastAPI (Python), RESTful API, Swagger, venv, SQLModel
 - 인증: JWT
 - Database: PostgreSQL (Host: 192.168.0.118, Port: 5435, User: postgres, Password: indi8922, Database: weblogin)
 
@@ -45,8 +45,7 @@
 - 관리자 로그인 및 대시보드 접근
 - 기본 RESTful API 구현
 - 반응형 웹 UI
-- PostgreSQL 연동 및 기본 데이터 모델 설계
-
+- PostgreSQL 연동 및 기본 데이터 모델 설계 (SQLModel 기반 모델 정의 및 마이그레이션 포함)
 
 # Logical Dependency Chain
 1. 데이터베이스 및 기본 데이터 모델 설계
